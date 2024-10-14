@@ -7,14 +7,11 @@
   <meta name="description" content="GeoGraspEvo: Multifinger 6DoF Grasp Pose Estimation">
   <meta property="og:title" content="GeoGraspEvo: Multifinger 6DoF Grasp Pose Estimation"/>
   <meta property="og:description" content="GeoGraspEvo: Multifinger 6DoF Grasp Pose Estimation"/>
-  <meta property="og:url" content="https://aurova-projects.github.io/tracker_fusion/"/>
+  <meta property="og:url" content="https://aurova-projects.github.io/GeoGraspEvo/"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/images/EKFdiagramICINCO.png" />
-  <meta property="og:image:width" content="856"/>
-  <meta property="og:image:height" content="515"/>
 
   <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="Target Tracking, Autonomous Vehicles, Robot Sensing Systems, Real-Time Systems">
+  <meta name="keywords" content="Robotics, RGB-D Perception, Perception for Grasping, Manipulation Planning, Grasping points">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
@@ -37,6 +34,24 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+  
+  <style>
+    .orcid-link .fa-orcid {
+      color: #A6CE39; /* ORCID green color */
+    }
+    .hero-body {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .left {
+      margin-right: auto;
+    }
+    .right {
+      margin-left: 30px; /* Adjust the space between the right logos */
+    }
+  </style>
+  
 </head>
 <body>
 
@@ -57,21 +72,32 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">GeoGraspEvo: Multifinger 6DoF Grasp Pose Estimation</h1>
+            <h1 class="center">Machine Vision and Applications (MVA)</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
                 Ignacio de Loyola Páez-Ubieta,
               </span>
+              <a href="https://orcid.org/0000-0001-9901-7264" target="_blank" class="orcid-link">
+                <i class="fab fa-orcid"></i>
+              </a>,
               <span class="author-block">
                 Daniel Frau-Alfaro,
               </span>
+              <a href="https://orcid.org/0009-0000-4098-3783" target="_blank" class="orcid-link">
+                <i class="fab fa-orcid"></i>
+              </a>,              
               <span class="author-block">
                 Santiago T. Puente,
               </span>
+              <a href="https://orcid.org/0000-0002-6175-600X" target="_blank" class="orcid-link">
+                <i class="fab fa-orcid"></i>
+              </a>,
             </div>
 
-            <div class="is-size-5 publication-authors">
-              <span class="author-block">Group of Automation, Robotics and Computer Vision (AUROVA)<br>University of Alicante</span>
+            <div class="is-size-4 publication-authors">
+              <span class="author-block">AUtomatics, RObotics and Artifivial Vision (AUROVA) Lab - University of Alicante
+              <span class="author-block">University Institute for Computer Research - University of Alicante</span>
             </div>
 
             <div class="is-size-8 publication-authors">
@@ -79,20 +105,20 @@
             </div>
 
             <div class="column has-text-centered">
-              <div class="publication-links">
-                    <!-- Paper link -->
-                <span class="link-block">
-                  <a href="https://rua.ua.es/dspace/bitstream/10045/138863/1/Olivas_etal_ICINCO-2023.pdf" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
+            <div class="publication-links">
+            
+            <!-- Paper link -->
+            <!--<span class="link-block">
+              <a href="https://rua.ua.es/dspace/bitstream/10045/138863/1/Olivas_etal_ICINCO-2023.pdf" target="_blank" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="fas fa-file-pdf"></i>
                   </span>
                   <span>Paper</span>
                 </a>
-              </span>
+              </span>-->
 
             <!-- Github link -->
-            <span class="link-block">
+            <!--<span class="link-block">
               <a href="https://github.com/AUROVA-LAB/applications/tree/main/app_tracker_fusion" target="_blank"
                 class="external-link button is-normal is-rounded is-dark">
                 <span class="icon">
@@ -100,7 +126,7 @@
                 </span>
                 <span>Code</span>
               </a>
-            </span>
+            </span>-->
 
           </div>
         </div>
@@ -191,6 +217,21 @@ With these results, we are able to match and improve some state-of-the-art metho
 </section>
 <!-- End paper abstract -->
 
+<!-- Results section -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Results</h2>
+          <figure class="image">
+            <img src="static/images/results.png" alt="Summarise of obtained results with different type of objects in both simulation and real setups." >
+          </figure>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End results section -->
+
 
 <section class="hero is-small">
   <div class="hero-body">
@@ -246,26 +287,37 @@ With these results, we are able to match and improve some state-of-the-art metho
 
 
 <!--BibTex citation -->
-  <!-- <section class="section" id="BibTeX">
+  <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>
-@conference{olivas2023robust,
-  author={Alejandro Olivas. and Miguel Muñoz{-}Bañón. and Edison Velasco. and Fernando Torres.},
-  title={Robust Single Object Tracking and Following by Fusion Strategy},
-  booktitle={Proceedings of the 20th International Conference on Informatics in Control, Automation and Robotics - Volume 1: ICINCO},
-  year={2023},
-  pages={624-631},
-  publisher={SciTePress},
-  organization={INSTICC},
-  doi={10.5220/0012178900003543},
-  isbn={978-989-758-670-5},
-  issn={2184-2809},
+@unpublished{PaezND,
+  author={I-L Páez-Ubieta, D. Frau-Alfaro and S.T. Puente},
+  title={GeoGraspEvo: Multifinger 6DoF Grasp Pose Estimation},
+  booktitle={Submitted to Machine Vision and Applications (MVA)},
+  year={N.D.}
 }
     </code></pre>
     </div>
-</section> -->
+</section> 
 <!--End BibTex citation -->
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="content has-text-justified">
+        <h3>
+          Research work was funded by:
+        </h3>
+        <ul>
+          <li>
+           Grant PID2021-122685OB-I00 funded by MICIU/AEI/10.13039/501100011033 and by ERDF/EU.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
 
   <footer class="footer">
