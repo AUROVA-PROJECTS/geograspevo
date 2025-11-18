@@ -232,6 +232,11 @@
 <!-- End paper abstract -->
 
 <!-- Results section -->
+img.equal-height {
+  height: 755px;           /* Match the taller image */
+  object-fit: contain;     /* Preserve aspect ratio inside the box */
+  width: 100%;             /* Fill the column width */
+}                
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
@@ -240,15 +245,17 @@
         
         <div class="columns is-centered">
           <div class="column is-half">
-            <figure class="image custom-half">
+            <figure class="image">
               <img src="static/images/GeoGraspEvo_objects.png" 
-                   alt="Objects extracted from the YCB dataset used during experiments.">
+                   alt="Objects extracted from the YCB dataset used during experiments."
+                   class="equal-height">
             </figure>
           </div>
           <div class="column is-half">
-            <figure class="image custom-half">
+            <figure class="image">
               <img src="static/images/GeoGraspEvo_results.png" 
-                   alt="Summary of results in simulated and real-world environments.">
+                   alt="Summary of results in simulated and real-world environments."
+                   class="equal-height">
             </figure>
           </div>
         </div>
